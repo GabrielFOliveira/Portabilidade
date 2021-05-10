@@ -1,0 +1,21 @@
+#!/bin/bash
+#The databases and tables on remotes servers will follow the local name configuration
+
+#DBUSERDST need to have same permissions described on portability.conf for DBUser.
+
+
+
+#Server IP
+DESTSERVER[0]="192.168.0.1"
+
+#DB Server Port
+PORTDESTSERVER[0]="3306"
+
+#DB Server User
+DBUSERDST[0]="test"
+
+#BD Server password
+DBPASSDST[0]="password"
+
+
+CHECK_CONF2=0

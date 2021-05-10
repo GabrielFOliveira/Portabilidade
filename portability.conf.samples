@@ -1,0 +1,80 @@
+#!/bin/bash
+
+#   In order to run portability.sh, the DBUser need to have permission to create databases (Case the DBtmp and DBPROD databases aren't created). In the case that you're sure that the databases are created, the user need to have permission to create, insert, drop and select tables on both databases.
+#   In order to change configuration of remote servers, go to ./remote-servers.conf
+
+##################
+
+#######
+# LOG #
+#######
+
+#Path to the log file.
+LOG=/var/log/portability.log
+
+#Path to errors log file.
+ERRORLOG=/var/log/portability_error.log
+
+############
+# DOWNLOAD #
+############
+
+#User used to download SIPPulse's full db
+DOWNLOAD_USER=
+
+#Password used to download SIPPulse's full db
+DOWNLOAD_PASS=
+
+#User used to download SIPPulse's full db
+DOWNLOAD_LINK=
+
+#######
+# SQL #
+#######
+
+SQL=mysql
+
+SQL_DUMP=mysqldump
+
+#Path to the secure directory of sql databases (where the downloaded file are going to be stored).
+SQL_SECURE=/var/db/mysql_secure
+
+#DB used to recreate a table with the same format that SIPPulse uses.
+DBSOURCE="tempport"
+
+#Table used to recreate SIPPulse's table format.
+SOURCETABLE="number_route_1"
+
+#User used to access the local mysql.
+DBUSER="root"
+
+#Password used to access the local mysql .
+DBPASS=""
+
+#Temporary table to change data to AVCorp's format
+TMPTABLE="tmp"
+
+#Production DB of portability
+DBPROD="portabilidade"
+
+#Production Table of portability
+PRODTABLE="portados"
+
+##########
+# ALERTS #
+##########
+
+#IDS to send error alerts via TELEGRAM
+ERROR_TELEGRAM="" #group ID
+
+#IDS to send finish reports via TELEGRAM
+REPORT_TELEGRAM="" #group ID
+
+#Emails to send error alerts
+ERROR_EMAIL=""
+
+#Email to send finish reports
+REPORT_EMAIL=""
+
+
+CHECK_CONF1=0

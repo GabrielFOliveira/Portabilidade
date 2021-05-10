@@ -1,0 +1,5 @@
+*.conf
+.lupdate
+BDO*
+conf_error
+
