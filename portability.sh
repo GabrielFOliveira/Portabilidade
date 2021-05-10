@@ -6,7 +6,7 @@
 #(0) Email: gabrielfoliveira36@gmail.com
 #(0) Creation Date 16/03/2020
 #(0) Last update: 21/05/2020
-#(0) Version:0.5
+#(0) Version:1.0
 #-----------------------------------------------------------------------------------
 #(0) Update the portability DB and send it to the databases.
 #(0)
